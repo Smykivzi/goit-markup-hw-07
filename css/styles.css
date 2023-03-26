@@ -38,10 +38,12 @@ body {
 	color: var(--main-color);
 }
 .container {
-	max-width: 1158px;
+	/* max-width: 1158px; */
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
 .container-header {
 	display: flex;
 	align-items: center;
@@ -87,8 +89,6 @@ body {
 	color: var(--blue-first-color);
 }
 .header-addess {
-	display: flex;
-	align-items: center;
 	margin-left: auto;
 }
 .header-list {
