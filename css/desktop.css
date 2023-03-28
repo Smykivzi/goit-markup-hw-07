@@ -2,13 +2,61 @@
 	.container {
 		max-width: 1158px;
 	}
+	.container-header {
+		/* display: flex;
+	align-items: center; */
+		max-width: 1158px;
+		/* margin: 0 auto;
+	padding: 0 15px; */
+	}
+	.list {
+		list-style: none;
+		display: flex;
+		align-items: center;
+	}
+	/* Hero section */
+	.hero-container {
+		max-width: 1200px;
+	}
+	.hero {
+		background: var(--main-color);
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/background/people-office1.jpg);
+		border-image-repeat: no-repeat;
+		margin: 0 auto;
+		max-width: 1440px;
+		padding-top: 188px;
+		padding-bottom: 188px;
+		border: 1px solid #000;
+	}
+	/* Перевизначаємо шлях до 2x зображення,
+    якщо щільність екрану мінімум 2 */
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		.hero {
+			background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+				url(../images/background/people-office-2x.jpg);
+		}
+	}
+	.hero-title {
+		font-size: 56px;
+		line-height: 1.07;
+		max-width: 496px;
+	}
 	.methods {
 		padding-top: 120px;
 	}
 	.mtd-list {
 		display: flex;
 		flex-direction: row;
-		gap: 24px;
+		flex-wrap: wrap;
+		align-content: flex-start;
+	}
+	.mtd-list-item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 8px;
 	}
 	.list-icon {
 		display: flex;
@@ -21,12 +69,13 @@
 		background: var(--white-first-color);
 		border-radius: 4px;
 	}
+	.mtd-list-title {
+		font-size: 20px;
+		line-height: 1.2;
+		align-items: start;
+	}
 	.mtd-list-text {
 		width: 264px;
-		font-size: 16px;
-		line-height: 1.5;
-		letter-spacing: 0.02em;
-		color: var(--accent-color);
 	}
 	.work {
 		display: flex;
@@ -54,112 +103,15 @@
 	}
 	.team-list {
 		display: flex;
+		flex-direction: row;
 		gap: 24px;
-	}
-	.team-title {
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.11;
-		text-align: center;
-		letter-spacing: 0.02em;
-		text-transform: capitalize;
-		color: var(--main-color);
-		margin-bottom: 72px;
-	}
-	.team-name {
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 1.2;
-		text-align: center;
-		letter-spacing: 0.02em;
-		color: var(--main-color);
-		margin-bottom: 8px;
-	}
-	.team-prof {
-		font-size: 16px;
-		line-height: 1.5;
-		text-align: center;
-		letter-spacing: 0.02em;
-		color: var(--accent-color);
-		font-size: 16px;
-		margin-bottom: 8px;
-	}
-	.team-content {
-		padding: 32px 16px;
-		background-color: var(--white-pure-color);
-		box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-			0px 2px 1px rgba(46, 47, 66, 0.08);
-		border-radius: 0px 0px 4px 4px;
-	}
-	.social-list {
-		display: flex;
-		justify-content: center;
-		gap: 24px;
-	}
-
-	.social-item {
-		fill: var(--blue-first-color);
-	}
-	.social-link {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		background-color: var(--blue-first-color);
-		transition-property: background;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	.social-link:hover,
-	.social-link:focus {
-		background-color: var(--blue-second-color);
 	}
 	.customers {
 		padding: 120px 0;
 	}
-	.customers-title {
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.11;
-		text-align: center;
-		letter-spacing: 0.02em;
-		text-transform: capitalize;
-		color: var(--main-color);
-		margin-bottom: 72px;
-	}
 	.customers-list {
 		display: flex;
 		gap: 24px;
-	}
-	.customers-item {
-		width: 168px;
-		height: 88px;
-	}
-	.customers-link {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 100%;
-		border: 1px solid var(--grey-color);
-		border-radius: 4px;
-		transition-property: border;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	.customers-link:is(:hover, :focus) {
-		border-color: var(--blue-second-color);
-	}
-	.customers-link:hover .customers-icon {
-		fill: var(--blue-second-color);
-	}
-	.customers-icon {
-		transition-property: fill;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		fill: var(--grey-color);
 	}
 	.footer-logo {
 		font-family: "Raleway";
