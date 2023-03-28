@@ -299,7 +299,7 @@ body {
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		fill: var(--grey-color);
 	}
-	.footer {
+	 /* .footer {
 		height: 662px;
 		padding: 0;
 	}
@@ -308,7 +308,7 @@ body {
 		width: 100%;
 		padding-top: 96px;
 		display: block;
-		/* direction: column; */
+		direction: column; 
 		position: relative;
 	}
 	.footer-main {
@@ -327,7 +327,7 @@ body {
 		padding-left: 27%;
 		position: relative;
 		margin-bottom: 72px;
-	}
+	} */
 	.footer-subtitle {
 		min-width: 96px;
 		padding-left: 55px;
@@ -393,5 +393,5 @@ body {
 	}
 	.footer-btn-mobile {
 		padding-left: 30%;
-	}
+	} */
 }
