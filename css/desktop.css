@@ -144,12 +144,15 @@
 	}
 	.footer-container {
 		display: flex;
-		direction: row;
+		flex-direction: row;
+		padding-top: 120px;
+		padding-left: 0;
 	}
 	.footer-main {
 		display: block;
 		align-items: center;
 		width: 35%;
+		padding: 0;
 	}
 	.footer-subcontainer {
 		display: block;
@@ -170,7 +173,7 @@
 		flex-direction: row;
 		gap: 24px;
 		position: absolute;
-		left: 59%;
+		left: 55%;
 	}
 	.footer-label {
 		display: flex;
